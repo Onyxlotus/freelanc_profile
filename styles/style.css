@@ -2,6 +2,8 @@
 @import url("./header.css");
 @import url("./mainPage.css");
 @import url("./aboutMe.css");
+@import url("./projects.css");
+@import url("./contacts.css");
 
 :root{
     --main-color: #e8bcb9;
