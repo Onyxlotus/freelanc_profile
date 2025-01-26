@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("./header.css");
+@import url("./mainPage.css");
+
+:root{
+    --main-color: #e8bcb9;
+    --black-color: #1D1A39;
+    --orange-color: #F39F5A;
+    --pink-color: #AE445A;
+    --violet-color: #451952;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-color);
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    color: var(--black-color);
+}
+

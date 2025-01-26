@@ -1,0 +1,15 @@
+.mainPage{
+    background-image: url("./../img/backgroundTop.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    padding-left: 200px;
+    gap: 35px;
+    flex-direction: column;
+}
+

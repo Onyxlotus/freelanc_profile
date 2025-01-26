@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+    position: fixed;
+    background-image: linear-gradient(var(--main-color), #eff0eb);
+    opacity: 90%;
+}
+
+.navigationList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.8rem;
+    list-style-type: none;
+}
+
+.navigationListItem a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
