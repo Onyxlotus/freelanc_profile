@@ -7,14 +7,17 @@
     padding: 0 100px;
     position: fixed;
     background-image: linear-gradient(var(--main-color), #eff0eb);
-    opacity: 90%;
+}
+
+.scrolled{
+    opacity: 30%;
 }
 
 .navigationList{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1.8rem;
+    gap: 2rem;
     list-style-type: none;
 }
 
@@ -24,4 +27,11 @@
     font-family: "Prata", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.navigationListItem a:hover{
+    color: var(--violet-color);
+    text-decoration: underline;
 }

@@ -1,0 +1,28 @@
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(var(--pink-color), var(--main-color) 20%);
+    visibility: none;
+}
+
+
+.aboutMe h2{
+    font-family: "Prata", serif;
+    font-size: 2.5rem;
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+
+.aboutMeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 50px;
+    gap: 50px;
+}
