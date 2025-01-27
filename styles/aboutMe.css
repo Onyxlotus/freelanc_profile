@@ -80,3 +80,80 @@
     content: "✓";
     margin-right: 10px;
 }
+
+@media (max-width: 1300px){
+
+
+    .aboutMeLeft img{
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .aboutMeRight{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1080px){
+    .aboutMeRight{
+        gap: 5px;
+    }
+    
+    .aboutMeRight h3{
+        font-size: 1.5rem;
+    }
+    
+    .aboutMeRightMainText{
+        font-size: 1rem;
+    }
+    
+    .aboutMeRightMainText a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px){
+    .aboutMe{
+        padding-top: 20px;
+    }
+
+    .aboutMeRight{
+        gap: 5px;
+    }
+    
+    .aboutMeRight h3{
+        font-size: 1.5rem;
+    }
+    
+    .aboutMeRightMainText{
+        font-size: 1rem;
+    }
+    
+    .aboutMeRightMainText a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px){
+    .aboutMeLeft{
+        display: none;
+    }
+
+    .aboutMe h2{
+        font-family: "Prata", serif;
+        font-size: 1.75rem;
+        margin-bottom: 5px;
+    }
+    
+    .aboutMeContainer{
+        margin-top: 5px;
+    }
+
+    .aboutMeRight{
+        gap: 1px;
+    }
+
+    .aboutMeRight h3{
+        font-size: 1.1rem;
+    }
+}

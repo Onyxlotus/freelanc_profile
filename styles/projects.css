@@ -137,3 +137,44 @@
     opacity: .25;
     pointer-events: none;
 }
+
+@media (max-width: 600px){
+    .slider{
+        width: 250px;
+        height: 400px;
+    }
+
+    .slider-list{
+        width: 250px;
+        height: 400px;
+    }
+
+    .slide{
+        width: 250px;
+        height: 400px;
+    }
+
+    .slide img{
+        width: 80%;
+        height: 200px;
+    }
+
+    .projects h2{
+        font-size: 1.75rem;
+    }
+
+    .slide p{
+        font-size: 1.2rem;
+    }
+
+    .projectsCardsCardGit{
+        padding: 15px 15px;
+        font-size: 0.8rem;
+    }
+
+    .projectsCardsCardPage{
+        padding: 15px 15px;
+        font-size: 0.8rem;
+    }
+
+}

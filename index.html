@@ -86,25 +86,38 @@
         </section>
         <section class="contacts section" id="contacts">
             <h2>Заинтересовались? Свяжитесь со мной!</h2>
-            <form class="contactForm">
-                <div class="contactFormContainer">
-                    <div class="formGroup">
-                        <label for="name">Имя:</label>
-                        <input type="text" id="name" name="name" required>
+            <div class="containerFormAndSW">
+                <form class="contactForm">
+                    <div class="contactFormContainer">
+                        <div class="formGroup">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div class="formGroup button">
+                            <input type="submit" value="Отправить" class="submit">
+                        </div>
                     </div>
-                    <div class="formGroup">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="formGroup">
-                        <label for="message">Сообщение:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <div class="formGroup button">
-                        <input type="submit" value="Отправить" class="submit">
+                </form>
+                <div class="OR">
+                    <p>ИЛИ</p>
+                </div>
+                <div class="socialWeb">
+                    <p>Напишите мне напрямую в социальных сетях:</p>
+                    <div class="socialWebLinks">
+                        <a href="https://vk.com/onyxlotus21805" target="_blank"><img src="./img/vk.svg"></a>
+                        <a href="https://t.me/Mihail_iskin" target="_blank"><img src="./img/telegram.svg"></a>
                     </div>
                 </div>
-            </form>
+            </div>
+
         </section>
     </div>
     <script src="./script.js"></script>

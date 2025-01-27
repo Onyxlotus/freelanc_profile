@@ -50,3 +50,55 @@
     color: var(--violet-color);
     box-shadow: none;
 }
+
+@media (max-width: 1300px) {
+    .bigText{
+        font-size: 2.5em;
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .smallText{
+        font-size: 1.5em;
+        grid-area: 3 / 4 / 4 / 5;
+    }
+}
+
+@media (max-width: 1080px) {
+    .bigText{
+        font-size: 2em;
+    }
+
+    .smallText{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 900px) {
+    .mainPage{
+        height: calc(100vh - 248px);
+    }
+    
+    .bigText{
+        font-size: 1.5em;
+    }
+
+    .smallText{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .bigText{
+        font-size: 1em;
+        grid-area: 1 / 2 / 3 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .smallText{
+        font-size: 0.75em;
+        grid-area: 2 / 4 / 3 / 5;
+    }
+}

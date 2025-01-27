@@ -14,14 +14,23 @@
     color: var(--black-color);
 }
 
+.containerFormAndSW{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+
 .contacts form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    gap: 10px;
+    width: 40%;
+    height: 50%;
+    gap: 30px;
     justify-content: start;
-   
+    margin: auto 0;
 
 }
 
@@ -29,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     width: 50%;
     border: 2px solid var(--black-color);
     border-radius: 20px;
@@ -69,4 +78,100 @@
 
 .contacts form .button input:hover {
     background-color: var(--pink-color);
+}
+
+.OR{
+    display: flex;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: "Prata", serif;
+    font-weight: 700;
+}
+
+.socialWeb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    margin: auto 0;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialWeb p{
+    font-size: 1.5rem;
+    font-family: "Prata", serif;
+}
+
+.socialWebLinks{
+    display: flex;
+    gap: 30px;
+}
+
+.socialWebLinks:nth-child(1){
+    width: 150px;
+}
+
+@media (max-width: 1300px){
+
+    .contacts h2{
+        font-size: 2rem;
+    }
+
+    .containerFormAndSW{
+        flex-direction: column;
+        gap: 25px;
+        justify-content: start;
+    }
+
+    .contacts form{
+        width: 80%;
+    }
+
+    .contactFormContainer{
+        width: 100%;
+    }
+
+    .socialWeb{
+        width: 80%;
+        gap: 20px;
+        justify-content: start;
+    }
+
+    .socialWebLinks{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .OR{
+        height: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .contacts{
+        padding-top: 50px;
+    }
+    .contacts h2{
+        font-size: 1.5rem;
+    }
+
+    .OR{
+        font-size: 2rem;
+    }
+
+    .contactFormContainer{
+        gap: 10px;
+    }
+
+    .socialWeb{
+        gap: 20px;
+        text-align: center;
+    }
 }
