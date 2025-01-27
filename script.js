@@ -82,3 +82,5 @@ let slider = document.querySelector('.slider'),
   
   slider.addEventListener('touchstart', swipeStart);
   slider.addEventListener('mousedown', swipeStart);
+
+  
