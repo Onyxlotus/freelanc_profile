@@ -13,95 +13,12 @@
     text-align: center;
     color: var(--black-color);
 }
-/* 
-.projectsCards{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.projectsCardsCard{
-    width: 300px;
-    min-height: 50vh;
-    flex-wrap: wrap;
-    height: auto;
-    background-color: var(--pink-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    border-radius: 25px;
-    box-shadow: 0 0 10px 5px var(--black-color);
-}
-
-.projectsCardsCard img{
-    width: 100%;
-    height: 50%;
-    border-radius: 25px 25px 0 0;
-}
-
-.projectsCardsCard p{
-    font-size: 1.2rem;
-    font-family: "Roboto", serif;
-    text-align: justify;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.projectsCardsCardLinks{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    margin-top: 35px;
-}
-
-.projectsCardsCardGit{
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 1rem;
-        font-family: "Roboto", serif;
-        text-align: center;
-        color: var(--black-color);
-        background-color: var(--main-color);
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-
-    
-}
-
-.projectsCardsCardGit:hover {
-    background-color: var(--black-color);
-    color: var(--main-color);
-}
-
-.projectsCardsCardPage{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-family: "Roboto", serif;
-    text-align: center;
-    color: var(--main-color);
-    background-color: var(--black-color);
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-
-
-}
-
-.projectsCardsCardPage:hover {
-background-color: var(--main-color);
-color: var(--black-color);
-} */
 
 
 .slider{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 500px;
     margin: 50px auto 0;
     user-select: none;
     touch-action: pan-y;
@@ -112,8 +29,8 @@ color: var(--black-color);
 }
 
 .slider-list{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -130,14 +47,75 @@ color: var(--black-color);
 }
 
 .slide{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 500px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: 1px solid #000;
+    justify-content: start;
+    border: 2px solid var(--black-color);
+    background-color: var(--orange-color);
+    border-radius: 20px;
+}
+
+.slide img{
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 2px solid var(--black-color);
+}
+
+.projectsCardsCardLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.projectsCardsCardGit{
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: var(--black-color);
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.projectsCardsCardGit:hover{
+    background-color: var(--black-color);
+    color: var(--main-color);
+}
+
+.projectsCardsCardPage{
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: var(--main-color);
+    background-color: var(--black-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.projectsCardsCardPage:hover{
+    background-color: var(--main-color);
+    color: var(--black-color);
+}
+
+.slide p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 20px;
 }
 
 .slider-arrows {
