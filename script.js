@@ -1,3 +1,56 @@
+const form = document.querySelector('.contactForm');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+
+
+
+  const data = new URLSearchParams();
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+
+  for (const pair of formData) {
+    data.append(pair[0], pair[1]);
+  }
+
+  let jsonString = "{";
+
+  formData.forEach((value, key) => {
+    jsonString += `"${key}": "${value}", `;
+  });
+
+  jsonString = jsonString.slice(0, -2);
+
+  jsonString += "}";
+  console.log(jsonString);
+
+
+  try {
+    const response = await fetch("http://vpn2.mars-shelter.com:5000/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: jsonString, // Преобразуем данные в JSON
+    });
+
+
+    if (response.ok) {
+      const result = await response.text();
+      alert("Сообщение успешно отправлено: " + result);
+    } else {
+      alert("Ошибка при отправке: " + response.statusText);
+    }
+  } catch (error) {
+    console.error("Ошибка запроса:", error);
+    alert("Произошла ошибка при отправке сообщения.");
+  }
+});
+
+
+
 //прилипший хедер
 
 document.addEventListener('scroll', function() {
@@ -83,4 +136,4 @@ let slider = document.querySelector('.slider'),
   slider.addEventListener('touchstart', swipeStart);
   slider.addEventListener('mousedown', swipeStart);
 
-  
+
