@@ -28,7 +28,7 @@ form.addEventListener('submit', async (event) => {
 
 
   try {
-    const response = await fetch("http://vpn2.mars-shelter.com:5000/submit", {
+    const response = await fetch("https://submit.mars-shelter.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
