@@ -4,7 +4,7 @@
     background-image: linear-gradient(var(--pink-color), var(--main-color) 10%);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .contacts h2{
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     height: 100%;
 }
 
@@ -28,7 +28,7 @@
     align-items: center;
     width: 40%;
     height: 50%;
-    gap: 30px;
+    gap: 10px;
     justify-content: start;
     margin: auto 0;
 
@@ -38,7 +38,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
     width: 50%;
     border: 2px solid var(--black-color);
     border-radius: 20px;
@@ -120,41 +119,19 @@
 
 @media (max-width: 1300px){
 
-    .contacts h2{
-        font-size: 2rem;
-    }
-
-    .containerFormAndSW{
-        flex-direction: column;
-        gap: 25px;
-        justify-content: start;
-    }
-
-    .contacts form{
-        width: 80%;
-    }
-
     .contactFormContainer{
-        width: 100%;
-    }
-
-    .socialWeb{
-        width: 80%;
-        gap: 20px;
-        justify-content: start;
-    }
-
-    .socialWebLinks{
-        width: 100%;
-        justify-content: center;
-    }
-
-    .OR{
-        height: 100%;
+        width: 75%;
     }
 }
 
 @media (max-width: 900px){
+
+    .containerFormAndSW{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: start;
+    }
+
     .contacts{
         padding-top: 50px;
     }

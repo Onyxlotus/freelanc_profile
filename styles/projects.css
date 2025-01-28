@@ -17,7 +17,7 @@
 .slider{
     position: relative;
     width: 400px;
-    height: 450px;
+    height: 400px;
     margin: 10px auto 0;
     user-select: none;
     touch-action: pan-y;
@@ -29,7 +29,7 @@
 
 .slider-list{
     width: 400px;
-    height: 450px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -47,7 +47,7 @@
 
 .slide{
     width: 400px;
-    height: 450px;
+    height: 400px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -59,10 +59,10 @@
 }
 
 .slide img{
-    width: 80%;
-    height: 300px;
+    width: 70%;
+    height: 200px;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: 2px solid var(--black-color);
 }
 
@@ -174,6 +174,51 @@
     .projectsCardsCardPage{
         padding: 15px 15px;
         font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 1300px){
+    .projects{
+        padding-top: 150px;
+    }
+
+    .projects h2{
+        font-size: 3rem;
+    }
+
+    .slider{
+        width: 500px;
+        height: 500px;
+    }
+
+    .slider-list{
+        width: 500px;
+        height: 500px;
+    }
+
+    .slide{
+        width: 500px;
+        height: 500px;
+    }
+
+    .slide img{
+        width: 85%;
+        height: 300px;
+    }
+
+    .slide p{
+        font-size: 1.75rem;
+    }
+
+    .projectsCardsCardGit{
+        padding: 25px 25px;
+        font-size: 1.2rem;
+    }
+
+    .projectsCardsCardPage{
+        padding: 25px 25px;
+        font-size: 1.2rem;
     }
 
 }
